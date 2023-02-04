@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  overflow-x:hidden;
+}
+
 body {
 overflow-x:hidden;
   margin: 0;
@@ -13,6 +17,21 @@ overflow-x:hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.skullimage {
+  position: absolute;
+  display: flex;
+  width: 50%;
+  bottom: 10%;
+}
+
+@media (min-width: 768px) {
+  .skullimage {
+    width: 50%;
+    bottom: auto;
+  }
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

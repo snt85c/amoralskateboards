@@ -1,5 +1,4 @@
 import "./App.css";
-import Navbar from "./Navbar";
 import Page from "./Page";
 import Footer from "./Footer";
 import { pageData } from "./pageData";
@@ -11,6 +10,7 @@ function App() {
     return (
       <Page
         key={index}
+        index={index}
         direction={index % 2 == 0 ? "left" : "right"}
         data={page}
       />
