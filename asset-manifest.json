@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/amoralskateboards/static/css/main.446ee803.css",
-    "main.js": "/amoralskateboards/static/js/main.a47fd469.js",
+    "main.css": "/amoralskateboards/static/css/main.a7387dd5.css",
+    "main.js": "/amoralskateboards/static/js/main.7f7ad2e9.js",
     "static/js/787.48a655f7.chunk.js": "/amoralskateboards/static/js/787.48a655f7.chunk.js",
     "static/media/skull.webp": "/amoralskateboards/static/media/skull.9a82b7db5c24135a955c.webp",
     "static/media/skullsmoke.webp": "/amoralskateboards/static/media/skullsmoke.315b67d079c322989e9a.webp",
@@ -9,12 +9,12 @@
     "static/media/qr.webp": "/amoralskateboards/static/media/qr.b62c7b91ef1792778edb.webp",
     "static/media/AMORAL_logo.webp": "/amoralskateboards/static/media/AMORAL_logo.265ccacb06bdbccf4a4f.webp",
     "index.html": "/amoralskateboards/index.html",
-    "main.446ee803.css.map": "/amoralskateboards/static/css/main.446ee803.css.map",
-    "main.a47fd469.js.map": "/amoralskateboards/static/js/main.a47fd469.js.map",
+    "main.a7387dd5.css.map": "/amoralskateboards/static/css/main.a7387dd5.css.map",
+    "main.7f7ad2e9.js.map": "/amoralskateboards/static/js/main.7f7ad2e9.js.map",
     "787.48a655f7.chunk.js.map": "/amoralskateboards/static/js/787.48a655f7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.446ee803.css",
-    "static/js/main.a47fd469.js"
+    "static/css/main.a7387dd5.css",
+    "static/js/main.7f7ad2e9.js"
   ]
 }
