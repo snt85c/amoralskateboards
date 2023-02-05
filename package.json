@@ -1,7 +1,7 @@
 {
   "name": "amoralskateboards",
   "version": "0.1.0",
-  "homepage": "https://snt85c.github.io/amoralskateboards",
+  "homepage": "https://amoralskateboards.com/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -15,7 +15,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-player": "^2.11.0",
     "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.8",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },

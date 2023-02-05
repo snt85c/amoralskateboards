@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { iPageData } from "./interface";
+
 export default function Page(props: {
   index: number;
   data: iPageData;
@@ -8,7 +9,7 @@ export default function Page(props: {
 }) {
   const ref = useRef(null);
   const isInView = useInView(ref, {
-    // once: true,
+    once: true,
     margin: "0px 100px -50px 0px",
   });
   return (
@@ -29,7 +30,7 @@ export default function Page(props: {
         }  md:w-1/2`}
       >
         <motion.img
-          className="object-contain w-1/2 md:w-full"
+          className="object-contain w-1/2 md:w-full mt-5"
           initial={{
             x: props.direction === "right" ? "100%" : "-100%",
             opacity: 0,
@@ -49,8 +50,8 @@ export default function Page(props: {
             props.index % 2 === 0 ? "left-0" : "right-0"
           } `}
         >
-          <div className="md:w-1/2">{props.data.textContent}</div>
-          <div className="text-sm md:w-1/2">{props.data.textContent2}</div>
+          <div className="md:w-1/2 text-amber-500 ">{props.data.textContent}</div>
+          <div className="text-sm md:text-xl p-2 md:py-9 md:w-1/2  bg-black rounded-xl">{props.data.textContent2}</div>
         </motion.div>
       </div>
     </motion.div>

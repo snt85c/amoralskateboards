@@ -1,30 +1,42 @@
-import AMORAL_logo from "./img/AMORAL_logo.webp";
 import Navbar from "./Navbar";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
+import video1 from "./img/intromobile.webm";
+import video2 from "./img/introdesktop.webm";
 
-export default function Intro() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, {
-    once: true,
-    margin: "0px 100px -50px 0px",
-  });
+export default function Intro(props: {
+  setIsLoaded: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   return (
     <>
       <motion.div
-        ref={ref}
-        layout
-        className="flex justify-center items-center min-h-screen text-white"
+        className=" text-white min-h-screen"
         initial={{
           opacity: 0,
         }}
-        animate={isInView ? { opacity: 1 } : {}}
+        animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="absolute top-0 right-0">
+        <div className="flex justify-center items-center">
           <Navbar />
+          <video
+            onLoadedData={() => {
+              props.setIsLoaded(true);
+            }}
+            autoPlay
+            muted
+            className="md:hidden flex h-screen min-w-screen"
+            src={video1}
+          ></video>
+          <video
+            onLoadedData={() => {
+              props.setIsLoaded(true);
+            }}
+            autoPlay
+            muted
+            className="hidden md:flex min-h-screen"
+            src={video2}
+          ></video>
         </div>
-        <img className=" w-[100%] md:w-[60%]" src={AMORAL_logo} />
       </motion.div>
     </>
   );

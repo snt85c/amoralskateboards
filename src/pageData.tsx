@@ -10,20 +10,20 @@ export const pageData: iPageData[] = [
   {
     isOverrideAnimation: false,
     textContent: "Custom",
-    textContent2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    textContent2: "Stand out from the crowd with a one-of-a-kind custom skateboard. Choose your own graphics, shapes, and sizes for a truly unique ride",
     img:skullsmoke,
     img2:board1
   },{
     isOverrideAnimation: false,
-    textContent: "Resistant",
-    textContent2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    textContent: "Strong",
+    textContent2: "Express your personality through your skateboard. With custom designs, you can show off your style and creativity on and off the board.",
     img:skull,
     img2:board2
     
   },{
     isOverrideAnimation: false,
     textContent: "Stylish",
-    textContent2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    textContent2: "Don't settle for a generic skateboard. Upgrade to a custom board for better performance and unbeatable style. Impress your friends and shred in style",
     img:fish,
     img2:board3
   }
