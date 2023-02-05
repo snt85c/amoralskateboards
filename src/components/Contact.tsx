@@ -1,0 +1,43 @@
+import { useInView, motion } from "framer-motion";
+import { useRef } from "react";
+import qr from "../img/qr.webp";
+export default function Contact(props: {
+  text: string;
+  text2: string;
+}) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    // once: true,
+    margin: "0px 100px -50px 0px",
+  });
+  return (
+    <>
+      <div className="flex flex-col justify-center items-center min-h-screen text-white select-none">
+        <a
+          href="https://www.instagram.com/amoralskateboards/"
+          target="_blank"
+          rel="noreferrer"
+          className="w-[50%] md:w-[20%]"
+        >
+          <img alt="intagram page" src={qr} />
+        </a>
+        <div
+          ref={ref}
+          className="flex flex-col justify-center items-center m-5"
+        >
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.8 }}
+            className="font-[Custom-1] text-xl md:text-5xl text-amber-500 text-center"
+          >
+            {props.text}
+          </motion.span>
+          <span className="flex gap-2 font-[Custom-2] font-extrabold text-white">
+            {props.text2}
+          </span>
+        </div>
+      </div>
+    </>
+  );
+}
