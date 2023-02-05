@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/amoralskateboards/static/css/main.1dd650a8.css",
-    "main.js": "/amoralskateboards/static/js/main.29afa590.js",
+    "main.css": "/amoralskateboards/static/css/main.379c1c96.css",
+    "main.js": "/amoralskateboards/static/js/main.db31cee7.js",
     "static/js/787.48a655f7.chunk.js": "/amoralskateboards/static/js/787.48a655f7.chunk.js",
     "static/media/board1.jpg": "/amoralskateboards/static/media/board1.56cec43afa5c41b0b2d9.jpg",
     "static/media/intromobile.webm": "/amoralskateboards/static/media/intromobile.7794b4aad1c049a20943.webm",
@@ -13,12 +13,12 @@
     "static/media/board3.jpg": "/amoralskateboards/static/media/board3.2c1bda730ef6cb145a62.jpg",
     "static/media/qr.webp": "/amoralskateboards/static/media/qr.b62c7b91ef1792778edb.webp",
     "index.html": "/amoralskateboards/index.html",
-    "main.1dd650a8.css.map": "/amoralskateboards/static/css/main.1dd650a8.css.map",
-    "main.29afa590.js.map": "/amoralskateboards/static/js/main.29afa590.js.map",
+    "main.379c1c96.css.map": "/amoralskateboards/static/css/main.379c1c96.css.map",
+    "main.db31cee7.js.map": "/amoralskateboards/static/js/main.db31cee7.js.map",
     "787.48a655f7.chunk.js.map": "/amoralskateboards/static/js/787.48a655f7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1dd650a8.css",
-    "static/js/main.29afa590.js"
+    "static/css/main.379c1c96.css",
+    "static/js/main.db31cee7.js"
   ]
 }
