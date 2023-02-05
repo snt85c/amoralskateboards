@@ -1,7 +1,7 @@
 {
   "name": "amoralskateboards",
   "version": "0.1.0",
-  "homepage": "https://snt85c.github.io/",
+  "homepage": "https://snt85c.github.io/amoralskateboards",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
