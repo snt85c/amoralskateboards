@@ -1,7 +1,6 @@
 {
   "name": "amoralskateboards",
   "version": "0.1.0",
-  "homepage": "https://snt85c.github.io/amoralskateboards",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -11,6 +10,7 @@
     "@types/node": "^16.18.11",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "firebase": "^9.17.1",
     "framer-motion": "^9.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && firebase deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",

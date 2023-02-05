@@ -2,10 +2,12 @@ import Navbar from "./Navbar";
 import { motion } from "framer-motion";
 import video1 from "./img/intromobile.webm";
 import video2 from "./img/introdesktop.webm";
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 export default function Intro(props: {
   setIsLoaded: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
+
   return (
     <>
       <motion.div
@@ -36,6 +38,10 @@ export default function Intro(props: {
             className="hidden md:flex min-h-screen"
             src={video2}
           ></video>
+        </div>
+        <div className="absolute bottom-0 right-0 text-amber-500 animate-bounce">
+
+        <FaAngleDoubleDown size={30}/>
         </div>
       </motion.div>
     </>

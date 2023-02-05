@@ -5,6 +5,7 @@ import fish from "./img/fish.webp"
 import board1 from "./img/board1.jpg"
 import board2 from "./img/board2.jpg"
 import board3 from "./img/board3.jpg"
+import workshop from "./img/workshop.webp"
 
 export const pageData: iPageData[] = [
   {
@@ -23,7 +24,7 @@ export const pageData: iPageData[] = [
   },{
     isOverrideAnimation: false,
     textContent: "Stylish",
-    textContent2: "Don't settle for a generic skateboard. Upgrade to a custom board for better performance and unbeatable style. Impress your friends and shred in style",
+    textContent2: "Don't settle for a generic skateboard.  \n Upgrade to a custom board for better performance and unbeatable style. Impress your friends and shred in style",
     img:fish,
     img2:board3
   }

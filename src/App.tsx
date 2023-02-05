@@ -6,7 +6,6 @@ import Contact from "./Contact";
 import Intro from "./Intro";
 import { useEffect, useState } from "react";
 import Spinner from "./Spinner";
-import "./MonumentExtendedBold.ttf";
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 

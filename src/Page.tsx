@@ -41,17 +41,17 @@ export default function Page(props: {
         />
         <motion.div
           initial={{
-            x: props.direction === "right" ? "100%" : "-100%",
+            x: props.direction === "right" ? "-100%" : "100%",
             opacity: 0,
           }}
           animate={isInView ? { x: "0", opacity: 1 } : {}}
-          transition={{ type: "tween", duration: 2 }}
+          transition={{ type: "tween", duration: 1.5 }}
           className={`absolute w-1/2 flex-col md:top-[25vh] flex text-[10vw] select-none p-5 pb-0 ${
             props.index % 2 === 0 ? "left-0" : "right-0"
           } `}
         >
-          <div className="md:w-1/2 text-amber-500 ">{props.data.textContent}</div>
-          <div className="text-sm md:text-xl p-2 md:py-9 md:w-1/2  bg-black rounded-xl">{props.data.textContent2}</div>
+          <div className="md:w-1/2 text-amber-500 font-[Custom-1]">{props.data.textContent.toUpperCase()}</div>
+          <div className="text-sm md:text-xl p-3 md:py-9 md:w-1/2 bg-gray-800 rounded-xl font-[Custom-2]">{props.data.textContent2}</div>
         </motion.div>
       </div>
     </motion.div>
