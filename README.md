@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# Amoral Skateboards
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+![alt text](./src/img/githubreadme/1.png)
+## Description
+
+this website uses React, TypeScript, TailwindCSS, Framer-Motion.
+
+
+
+the client (AMORALSKATEBOARDS) commissioned an SPA that would link his website to his instagram profile
+
+![alt text](./src/img/githubreadme/2.png)
 
 ## Available Scripts
 
