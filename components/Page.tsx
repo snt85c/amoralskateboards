@@ -13,7 +13,6 @@ export default function Page(props: {
     margin: "0px 100px -50px 0px",
   });
   return (
-
     <motion.div
       ref={ref}
       className={`min-h-screen flex flex-col md:flex-row odd:md:flex-row-reverse text-white bg-black my-2 `}
@@ -25,7 +24,14 @@ export default function Page(props: {
       transition={{ type: "tween", duration: 0.8 }}
     >
       <Image
-      height={500} width={500}
+        height={500}
+        width={500}
+        sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
+        priority
+        placeholder="blur"
+        blurDataURL={props.data.img}
         className="md:w-1/2 object-contain"
         src={props.data.img2}
         alt={props.data.textContent}
@@ -42,13 +48,18 @@ export default function Page(props: {
           }}
           animate={isInView ? { x: "0", opacity: 1 } : {}}
           transition={{ type: "tween", duration: 1.5 }}
-          
         />
         <Image
           className="object-contain w-1/2 md:w-full mt-5"
-
-        width={500} height={500}
-        src={props.data.img}
+          sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
+          width={500}
+          height={500}
+          priority
+          placeholder="blur"
+          blurDataURL={props.data.img}
+          src={props.data.img}
           alt=""
         />
         <motion.div

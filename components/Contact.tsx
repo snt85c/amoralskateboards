@@ -2,10 +2,7 @@ import { useInView, motion } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 
-export default function Contact(props: {
-  text: string;
-  text2: string;
-}) {
+export default function Contact() {
   const ref = useRef(null);
   const isInView = useInView(ref, {
     // once: true,
@@ -32,10 +29,10 @@ export default function Contact(props: {
             transition={{ duration: 0.8 }}
             className="font-[Custom-1] text-xl md:text-5xl text-amber-500 text-center"
           >
-            {props.text}
+            Contact me on Instagram
           </motion.span>
           <span className="flex gap-2 font-[Custom-2] font-extrabold text-white">
-            {props.text2}
+          get yours today!
           </span>
         </div>
       </div>

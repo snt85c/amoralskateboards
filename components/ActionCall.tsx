@@ -1,9 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-export default function ActionCall(props: {
-  text: string;
-  text2: string;
-}) {
+export default function ActionCall() {
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
@@ -21,10 +18,10 @@ export default function ActionCall(props: {
         transition={{ duration: 0.8 }}
         className="font-[Custom-1] text-xl md:text-5xl text-amber-500 text-center"
       >
-        {props.text}
+        HANDCRAFTED BOARDS FROM ITALY 🇮🇹
       </motion.span>
       <span className="flex font-[Custom-2] font-extrabold md:text-xl text-white p-2">
-        {props.text2}
+      made with passion
       </span>
     </div>
   );

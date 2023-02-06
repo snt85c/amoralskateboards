@@ -1,4 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Amoral Skateboards
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`]
+
+![alt text](/public/img/githubreadme/1.png)
+
+## Description
+
+this website uses React, Next.js, TypeScript, TailwindCSS and Framer-Motion. Deployed on Vercel.
+
+the client (**AMORALSKATEBOARDS**) commissioned an SPA that would link his website to his instagram profile to showcase his products.
+
+
+![alt text](/public/img/githubreadme/2.png)
+
+The project has been made with TS and Next.js in order to be scalable in the future.
+
+![alt text](/public/img/githubreadme/3.png)
 
 ## Getting Started
 

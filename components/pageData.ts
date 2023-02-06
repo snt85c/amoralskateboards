@@ -13,28 +13,28 @@ export interface iPageData {
 
 export const shop: iShop[] = [
   {
-    img: "/img/skateboard/skate1.jpg",
+    img: "/img/skateboard/skate1.webp",
     descr: `"POPSICLE 8,25"x 31,5" wb 14" 7ply Low/mid concave"`,
   },
   {
-    img: "/img/skateboard/skate2.jpg",
+    img: "/img/skateboard/skate2.webp",
     descr: `"POPSICLE 8,125"x 31,5" wb 14" 7ply Low/Mid concave"`,
   },
   {
-    img: "/img/skateboard/skate3.jpg",
+    img: "/img/skateboard/skate3.webp",
     descr: `POPSICLE 8,5"x 32" wb 14,3" 7ply 
   `,
   },
   {
-    img: "/img/skateboard/skate4.jpg",
+    img: "/img/skateboard/skate4.webp",
     descr: `POPSICLE MOD 8,5"x 31,5" wb 14"/14,3"`,
   },
   {
-    img: "/img/skateboard/skate5.jpg",
+    img: "/img/skateboard/skate5.webp",
     descr: `OLD SKULL II 9"x 32" wb14" 7ply `,
   },
   {
-    img: "/img/skateboard/skate6.jpg",
+    img: "/img/skateboard/skate6.webp",
     descr: `POPSICLE 8,25"x 31,5" wb 14" 7ply 
   `,
   },
