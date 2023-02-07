@@ -1,12 +1,13 @@
 import { motion, useInView } from "framer-motion";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 
 export default function Skate(props: {
-  skate: { img: string; descr: string };
+  skate: { img: string | any; descr: string };
   i: number;
 }) {
   const [isClicked, setIsClicked] = useState(false);
+
   const ref = useRef(null);
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef);
@@ -43,7 +44,10 @@ export default function Skate(props: {
         transition={{ type: "tween", duration: 0.8 }}
         className="flex flex-col justify-evenly w-1/3 md:w-1/4 min-h-[20vh] md:min-h-[35vh] p-2 pb-0 m-2 bg-amber-500 rounded-xl"
       >
-        <Image width={500} height={500}
+        <Image
+          width={500}
+          height={500}
+          unoptimized={true}
           className="object-fit rounded-xl shadow-lg shadow-black"
           src={props.skate.img}
           alt={props.skate.descr}
@@ -57,7 +61,13 @@ export default function Skate(props: {
           ref={wrapperRef}
           className="absolute z-50 object-contain shadow-lg shadow-black bg-black p-1"
         >
-          <Image width={600} height={600} src={props.skate.img} alt={props.skate.descr}/>
+          <Image
+            width={600}
+            height={600}
+            unoptimized={true}
+            src={props.skate.img}
+            alt={props.skate.descr}
+          />
         </div>
       )}
     </>

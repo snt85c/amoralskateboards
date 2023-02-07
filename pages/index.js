@@ -8,6 +8,7 @@ import { pageData } from "../components/pageData";
 import Page from "../components/Page";
 import Contact from "../components/Contact";
 import uuid from "react-uuid";
+
 import telegramAlerter from "../components/TelegramAlerter";
 
 export default function Home() {

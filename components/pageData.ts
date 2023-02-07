@@ -31,7 +31,7 @@ export const shop: iShop[] = [
   },
   {
     img: "/img/skateboard/skate5.webp",
-    descr: `OLD SKULL II 9"x 32" wb14" 7ply `,
+    descr: `OLD SKULL II 9"x 32" wb14" 7ply`,
   },
   {
     img: "/img/skateboard/skate6.webp",
