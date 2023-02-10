@@ -7,6 +7,7 @@ export default function Skate(props: {
   i: number;
 }) {
   const [isClicked, setIsClicked] = useState(false);
+  const {skate, i} = props;
 
   const ref = useRef(null);
   const wrapperRef = useRef(null);
@@ -37,7 +38,7 @@ export default function Skate(props: {
           setIsClicked(true);
         }}
         initial={{
-          x: props.i % 2 === 0 ? "100%" : "-100%",
+          x: i % 2 === 0 ? "100%" : "-100%",
           opacity: 0,
         }}
         animate={isInView ? { x: "0", opacity: 1 } : {}}
@@ -49,11 +50,12 @@ export default function Skate(props: {
           height={500}
           unoptimized={true}
           className="object-fit rounded-xl shadow-lg shadow-black"
-          src={props.skate.img}
-          alt={props.skate.descr}
+          src={skate.img}
+          alt={skate.descr}
+          loading={"lazy"}
         />
         <div className="text-[Custom-2] p-2 pt-3 text-[0.6rem] text-black select-none">
-          {props.skate.descr}
+          {skate.descr}
         </div>
       </motion.div>
       {isClicked && (
@@ -65,8 +67,9 @@ export default function Skate(props: {
             width={600}
             height={600}
             unoptimized={true}
-            src={props.skate.img}
-            alt={props.skate.descr}
+            src={skate.img}
+            alt={skate.descr}
+            loading={"eager"}
           />
         </div>
       )}

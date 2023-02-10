@@ -24,7 +24,7 @@ export default function Showcase() {
 
   return (
     <>
-      <div className="flex justify-center items-center mt-10 flex-wrap">
+      <div className="flex justify-center items-center mt-20 flex-wrap">
         {!boards ? (
           <>
             {shop.map((skate: iShop, i) => {

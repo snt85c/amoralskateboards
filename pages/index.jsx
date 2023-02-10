@@ -8,14 +8,13 @@ import { pageData } from "../components/pageData";
 import Page from "../components/Page";
 import Contact from "../components/Contact";
 import uuid from "react-uuid";
-
 import telegramAlerter from "../components/TelegramAlerter";
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    telegramAlerter();
+    if (process.env.NODE_ENV !== "development") telegramAlerter();
   }, []);
 
   let PAGES = pageData.map((page, index) => {
