@@ -38,7 +38,6 @@ export default function Page(props: {
         className="md:w-1/2 h-[75vh] md:min-h-full object-contain"
         src={data.img2}
         alt={data.textContent}
-        loading={"lazy"}
       />
       <motion.div
         layout
@@ -61,7 +60,6 @@ export default function Page(props: {
         placeholder="blur"
         blurDataURL={data.img}
         src={data.img}
-        loading={"lazy"}
         alt=""
       />
       <motion.div
