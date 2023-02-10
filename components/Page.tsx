@@ -28,6 +28,7 @@ export default function Page(props: {
       transition={{ type: "tween", duration: 0.8 }}
     >
       <Image
+        priority={true}
         height={500}
         width={500}
         sizes="(max-width: 768px) 100vw,
@@ -55,6 +56,7 @@ export default function Page(props: {
         sizes="(max-width: 768px) 100vw,
           (max-width: 1200px) 50vw,
           33vw"
+        priority={true}
         width={500}
         height={500}
         placeholder="blur"
