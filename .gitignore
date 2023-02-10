@@ -15,7 +15,7 @@
 # production
 /build
 
-/sanity-project
+/sanity-project/
 
 # misc
 .DS_Store

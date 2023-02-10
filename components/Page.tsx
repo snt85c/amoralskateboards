@@ -17,6 +17,7 @@ export default function Page(props: {
 
   return (
     <motion.div
+      layout
       ref={ref}
       className={`h-[75vh] md:min-h-screen flex odd:md:flex-row-reverse text-white bg-black my-2 `}
       initial={{
