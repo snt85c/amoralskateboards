@@ -16,7 +16,7 @@ export default function Intro(props: {
       <motion.div
         className=" text-white min-h-screen"
         initial={{
-          opacity: 0,
+          opacity: 0.01,
         }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -36,7 +36,7 @@ export default function Intro(props: {
             src={video2}
           ></video>
         </div>
-        <div className="absolute bottom-0 right-0 text-amber-500 animate-bounce">
+        <div className="absolute bottom-0 left-0 text-amber-500 animate-bounce">
           <FaAngleDoubleDown size={30} />
         </div>
       </motion.div>
