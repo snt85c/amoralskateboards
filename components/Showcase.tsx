@@ -14,26 +14,32 @@ const client = createClient({
 const builder = imageUrlBuilder(client);
 
 export default function Showcase() {
-  const [boards, setBoards] = useState([]);
+  const [boards, setBoards] = useState<iShop[] | []>([]);
+
   useEffect(() => {
-    const query = `*[_type == "board"]`;
-    client.fetch(query).then((boards) => {
-      setBoards(boards);
-    });
+    try {
+      const query = `*[_type == "board"]`;
+      client.fetch(query).then((boards) => {
+        setBoards(boards);
+      });
+    } catch (e) {
+      console.warn("FETCH error in Sanity.io", e);
+    }
   }, []);
 
   return (
     <>
       <div className="flex justify-center items-center mt-20 flex-wrap">
-        {!boards ? (
+        {boards.length < 1 ? (
           <>
+            {/* load a default set of boards if there is an error with the fetch, or the client removed all the boards from the CMS */}
             {shop.map((skate: iShop, i) => {
               return <Skate key={uuid()} skate={skate} i={i} />;
             })}
           </>
         ) : (
           <>
-            {boards.map((board, i) => (
+            {boards.map((board:any, i: number) => (
               <Skate
                 key={board._id}
                 skate={{

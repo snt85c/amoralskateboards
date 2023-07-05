@@ -9,7 +9,7 @@ export default function Page(props: {
 }) {
   const ref = useRef(null);
   const isInView = useInView(ref, {
-    once: true,
+    // once: true,
     margin: "0px 100px -50px 0px",
   });
 
@@ -19,7 +19,7 @@ export default function Page(props: {
     <motion.div
       layout
       ref={ref}
-      className={`h-[75vh] md:min-h-screen flex odd:md:flex-row-reverse text-white bg-black my-2 `}
+      className={`h-[75vh] md:min-h-screen flex odd:md:flex-row-reverse text-white bg-black `}
       initial={{
         x: direction === "right" ? "100%" : "-100%",
         opacity: 0,
@@ -35,8 +35,8 @@ export default function Page(props: {
           (max-width: 1200px) 50vw,
           33vw"
         placeholder="blur"
-        blurDataURL={data.img}
-        className="md:w-1/2 h-[75vh] md:min-h-full object-contain"
+        blurDataURL={data.img2}
+        className="md:w-[50vw] h-[75vh] md:min-h-full object-cover"
         src={data.img2}
         alt={data.textContent}
       />
@@ -67,18 +67,19 @@ export default function Page(props: {
       <motion.div
         layout
         initial={{
-          x: direction === "right" ? "-100%" : "100%",
+          x: direction === "right" ? "-100%" : "110%",
           opacity: 0,
         }}
         animate={isInView ? { x: "0", opacity: 1 } : {}}
         transition={{ type: "tween", duration: 1.5 }}
-        className={`absolute pt-12 md:pt-0 flex flex-col justify-center items-center  min-h-[75vh] md:min-h-screen
-          ${index % 2 === 0 ? "left-0" : "right-0"} `}
+        className={`absolute pt-12 wmd:pt-0 flex flex-col justify-center items-center min-h-[75vh] md:min-h-screen w-full
+         ${index % 2 === 0 ? "left-0" : "right-0"} 
+        `}
       >
-        <div className="w-full text-center md:w-1/2 text-amber-500 font-[Custom-1] text-[17vw] md:text-[10vw]">
+        <div className="w-full text-center  text-amber-500 font-[Custom-1] text-[5rem] md:text-[8rem]">
           {data.textContent.toUpperCase()}
         </div>
-        <div className="text-sm md:text-xl p-3 md:py-9 w-1/2 bg-gray-800 rounded-xl font-[Custom-2] shadow-xl shadow-black">
+        <div className="text-sm text-center md:text-xl p-3 md:py-9 w-1/2 bg-gray-800 rounded-xl font-[Custom-2] shadow-xl shadow-black">
           {data.textContent2}
         </div>
       </motion.div>

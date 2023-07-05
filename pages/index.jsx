@@ -14,10 +14,13 @@ export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    if (process.env.NODE_ENV !== "development") telegramAlerter();
+    if (process.env.NODE_ENV !== "development") {
+      telegramAlerter();
+    }
+    console.info("amoralskateboards.com created by https://github.com/snt85c");
   }, []);
 
-  let PAGES = pageData.map((page, index) => {
+  let Pages = pageData.map((page, index) => {
     return (
       <Page
         key={uuid()}
@@ -27,6 +30,12 @@ export default function Home() {
       />
     );
   });
+  useEffect(() => {
+    //nextjs api fetch test
+    fetch("/api/hello")
+      .then((data) => data.json())
+      .then((data) => console.log(data.name));
+  }, []);
 
   return (
     <>
@@ -40,7 +49,7 @@ export default function Home() {
         {!isLoaded ? <Spinner /> : <></>}
         <Intro setIsLoaded={setIsLoaded} />
         <ActionCall />
-        {PAGES}
+        {Pages}
         <Showcase />
         <Contact />
       </main>

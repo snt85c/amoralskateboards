@@ -8,9 +8,11 @@ import { useEffect } from "react";
 export default function Intro(props: {
   setIsLoaded: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
+
   useEffect(() => {
     props.setIsLoaded(true);
   }, []);
+  
   return (
     <>
       <motion.div
